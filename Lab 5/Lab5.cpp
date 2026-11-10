@@ -16,9 +16,9 @@ void winMessage();
 void loseMessage();
 void playAgainMessage();
 
-//Precondition: 
+// Precondition: 
 // The user is ready to play the game
-// The global variables wins and loses start at 0
+// The variables wins and loses start at 0
 
 int main()
 {
@@ -48,7 +48,7 @@ int main()
 
     return 0;
 }
-// Function Called to play the game
+// Function Definitions
 void playGame(int& wins, int& losses)
 {
 	// Generate a random number between 0 and 100

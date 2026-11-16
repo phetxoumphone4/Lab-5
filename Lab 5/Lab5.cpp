@@ -33,9 +33,10 @@ int main()
 	// Main game loop
     do
     {
-	
+
         playGame(wins, losses);
         playAgainMessage();
+        loseMessage();
         cin >> playAgain;
         
 		// Validate user input

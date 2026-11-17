@@ -10,20 +10,22 @@ November 10, 2026
 
 using namespace std;
 
-// Precondition: 
-// The user is ready to play the game
-// The variables wins and losses start at 0
-
-// Postconditions
-// The user has had up to 20 chances to guess the number
-// The total wins and loses are updated everytime the user plays the game
-
 // Function Prototypes
 void playGame(int& wins, int& losses);
-void winMessage();
-void loseMessage();
-void playAgainMessage();
+//Precondition:The wins and losses variables have been initialized.
+//Postcondition: The user has played the game and the wins and losses variables have been updated accordingly.
 
+void winMessage();
+//Precondition: The user has won the game.
+//Postcondition: A winning message is displayed.
+
+void loseMessage();
+//Precondition: The user has lost the game.
+//Postcondition: A losing message is displayed.
+
+void playAgainMessage();
+//Precondition: The user has finished playing a round.
+//Postcondition: The user is asked if they want to play again.
 
 int main()
 {

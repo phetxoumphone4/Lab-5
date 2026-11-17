@@ -10,15 +10,20 @@ November 10, 2026
 
 using namespace std;
 
+// Precondition: 
+// The user is ready to play the game
+// The variables wins and loses start at 0
+
+// Postconditions
+// The user has had up to 20 chances to guess the number
+// The total wins and loses are updated everytime the user plays the game
+
 // Function Prototypes
 void playGame(int& wins, int& losses);
 void winMessage();
 void loseMessage();
 void playAgainMessage();
 
-// Precondition: 
-// The user is ready to play the game
-// The variables wins and loses start at 0
 
 int main()
 {
@@ -36,10 +41,9 @@ int main()
 
         playGame(wins, losses);
         playAgainMessage();
-        loseMessage();
         cin >> playAgain;
         
-		// Validate user input
+		// Checks if the user want to play again 
     } while (playAgain == 'Y' || playAgain == 'y');
 	
     // Display total wins and losses
@@ -213,6 +217,3 @@ void playAgainMessage()
     }
 }
 
-// Postconditions
-// The user has had up to 20 chances to guess the number
-// The total wins and loses are updated

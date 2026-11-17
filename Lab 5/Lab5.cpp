@@ -12,7 +12,7 @@ using namespace std;
 
 // Precondition: 
 // The user is ready to play the game
-// The variables wins and loses start at 0
+// The variables wins and losses start at 0
 
 // Postconditions
 // The user has had up to 20 chances to guess the number
@@ -38,7 +38,6 @@ int main()
 	// Main game loop
     do
     {
-
         playGame(wins, losses);
         playAgainMessage();
         cin >> playAgain;
@@ -46,7 +45,6 @@ int main()
 		// Checks if the user want to play again 
     } while (playAgain == 'Y' || playAgain == 'y');
 	
-    // Display total wins and losses
     cout << "\nTotal Wins: " << wins << endl;
     cout << "Total Losses: " << losses << endl;
     cout << "Thanks for playing!" << endl;
